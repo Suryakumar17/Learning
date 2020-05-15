@@ -14,7 +14,7 @@ public class Find_lc_uc_number_2ndapproach {
 				upper++;
 			}else if(Character.isDigit(ch)) {
 				number++;
-			}else {
+			}else if(Character.isWhitespace(ch)) {
 				spaces++;
 			}
 		}

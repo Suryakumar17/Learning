@@ -15,8 +15,10 @@ public class Find_lc_uc_number {
                 lower++; 
             else if (ch >= '0' && ch <= '9') 
                 number++; 
-            else
-                spaces++; 
+            else if((int)ch==32) {
+            	spaces++;
+            }
+                
         } 
         System.out.println("Uppercase:"+upper);
         System.out.println("Lowercase:"+lower);
